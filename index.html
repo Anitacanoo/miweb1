@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+    </style>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Sección de Inicio</h2>
+        <p>Esta es la sección principal donde presento mi página web. Puedes incluir cualquier contenido aquí.</p>
+    </section>
+    
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>Aquí puedes listar los servicios que ofreces o cualquier información relevante.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <button id="contactoButton">Hacer clic aquí</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Mi Página Web</p>
+    </footer>
+
+    <script>
+    
+    function mostrarAlerta() {
+        alert('¡Gracias por visitar nuestra página! Nos pondremos en contacto pronto.');
+    }
+    
+    document.getElementById('contactoButton').addEventListener('click', mostrarAlerta);
+
+    document.getElementById('contactoButton').addEventListener('mouseover', function() {
+        this.style.backgroundColor = '#007BFF';
+    });
+
+    document.getElementById('contactoButton').addEventListener('mouseout', function() {
+        this.style.backgroundColor = '#333';
+    });
+    </script>
+</body>
+</html>
